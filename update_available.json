@@ -1,9 +1,9 @@
 {
     "update_available": true,
     "files": [
-        "https://files.catbox.moe/325mr9.pyd",
-        "https://files.catbox.moe/50ppfk.pyd",
-        "https://files.catbox.moe/ga9495.bat",
-        "https://files.catbox.moe/rhfn4a.txt"
+        "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/CFBAuction.cp38-win_amd64.pyd",
+        "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/keyauth.cp38-win_amd64.pyd",
+        "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/modules.bat",
+        "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/requirements.txt"
     ]
 }
