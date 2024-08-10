@@ -1,0 +1,10 @@
+{
+    "update_available": true,
+    "files": [
+        "https://github.com/Jjc1228/CFBAuctionBot/raw/main/keyauth.cp38-win_amd64.pyd",
+		"https://github.com/Jjc1228/CFBAuctionBot/raw/main/CFBAuction.cp38-win_amd64.pyd",
+		"https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/modules.bat?token=GHSAT0AAAAAACVM4BWCR3ERVRB5MATVQ3V6ZVWYOFA",
+		"https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/requirements.txt?token=GHSAT0AAAAAACVM4BWDHGLLLJB52QSG52XGZVWYP5A"
+	
+    ]
+} 
