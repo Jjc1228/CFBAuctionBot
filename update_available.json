@@ -1,7 +1,7 @@
 {
     "update_available": true,
     "files": [
-        "https://github.com/Jjc1228/CFBAuctionBot/raw/main/CFBAuction.cp38-win_amd64.pyd",
+        "https://files.catbox.moe/50ppfk.pyd",
         "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/CFBAuction.cp38-win_amd64.pyd",
         "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/modules.bat",
         "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/requirements.txt"
