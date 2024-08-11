@@ -1,23 +1,38 @@
 @echo off
-REM Check if Conda is installed
-where conda >nul 2>nul
-if %errorlevel% == 0 (
-    echo Conda detected. Installing packages in Conda environment...
-
-    REM Activate Conda environment
-    conda activate cv
-
-    REM Install packages using Conda
-    conda install --yes pytesseract PyQt6 opencv numpy
-
-    REM Install non-Conda packages with pip
-    pip install keyauth
-) else (
-    echo Conda not detected. Installing packages using pip...
-
-    REM Install packages using pip
-    pip install -r requirements.txt
+REM Check if Chocolatey is installed
+choco -v >nul 2>&1
+IF %ERRORLEVEL% NEQ 0 (
+    echo Chocolatey is not installed. Installing Chocolatey...
+    @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
+) ELSE (
+    echo Chocolatey is already installed.
 )
 
-echo Setup complete.
+REM Specify the virtual environment directory
+SET VENV_DIR=path\to\your\virtual\environment
+
+REM Check if the virtual environment exists
+IF EXIST "%VENV_DIR%" (
+    echo Activating the virtual environment...
+    CALL "%VENV_DIR%\Scripts\activate.bat"
+) ELSE (
+    echo Virtual environment does not exist. Creating the virtual environment...
+    python -m venv "%VENV_DIR%"
+    IF EXIST "%VENV_DIR%" (
+        echo Virtual environment created. Activating...
+        CALL "%VENV_DIR%\Scripts\activate.bat"
+    ) ELSE (
+        echo Failed to create virtual environment. Please check the path and try again.
+        pause
+        exit /b 1
+    )
+)
+
+REM Install pytesseract in the virtual environment
+echo Installing pytesseract...
+pip install pytesseract
+pip install keyauth
+
+
+echo Setup completed.
 pause
