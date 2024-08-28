@@ -3,6 +3,7 @@
     "files": [
         "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/keyauth.cp38-win_amd64.pyd",
         "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/Madden25Auction.cp38-win_amd64.pyd",
-        "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/modules.bat"
+        "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/modules.bat",
+        "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/settings.json"
     ]
 }
