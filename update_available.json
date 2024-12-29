@@ -1,5 +1,5 @@
 {
-    "update_available": true,
+    "update_available": false,
     "files": [
         "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/CFBAuction.cp38-win_amd64.pyd",
         "https://raw.githubusercontent.com/Jjc1228/CFBAuctionBot/main/keyauth.cp38-win_amd64.pyd",
